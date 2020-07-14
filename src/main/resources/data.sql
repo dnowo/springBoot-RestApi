@@ -1,0 +1,10 @@
+INSERT INTO USER(id, name, surname) VALUES (1, 'Daniel', 'Nowosielecki');
+INSERT INTO USER(id, name, surname) VALUES (2, 'Name [2]', 'Surname [2]');
+INSERT INTO USER(id, name, surname) VALUES (3, 'Name [3]', 'Surname [3]');
+INSERT INTO USER(id, name, surname) VALUES (4, 'Name [4]', 'Surname [4]');
+INSERT INTO USER(id, name, surname) VALUES (5, 'Name [5]', 'Surname [5]');
+INSERT INTO USER(id, name, surname) VALUES (6, 'Name [6]', 'Surname [6]');
+INSERT INTO USER(id, name, surname) VALUES (7, 'Name [7]', 'Surname [7]');
+INSERT INTO USER(id, name, surname) VALUES (8, 'Name [8]', 'Surname [8]');
+INSERT INTO USER(id, name, surname) VALUES (9, 'Name [9]', 'Surname [9]');
+INSERT INTO USER(id, name, surname) VALUES (10, 'Name [10]', 'Surname [10]');
