@@ -1,9 +1,7 @@
 package pl.danielnowo.RestAPI.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.danielnowo.RestAPI.model.User;
 import pl.danielnowo.RestAPI.service.UserService;
 
@@ -23,5 +21,23 @@ public class UsersController {
     @GetMapping("/users/{id}")
     public User getSingleUser(@PathVariable long id){
         return userService.getSingleUser(id);
+    }
+
+    @GetMapping("/names")
+    public List<User> getByNames(){ return userService.getByNames("Name [4]"); }
+
+    @PostMapping("/post")
+    public User createUser(@RequestBody User user){
+        return userService.createUser(user);
+    }
+
+    @PutMapping("/put")
+    public User editUser(@RequestBody User user){
+        return userService.editUser(user);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteUser(@PathVariable long id){
+        userService.deleteUser(id);
     }
 }
